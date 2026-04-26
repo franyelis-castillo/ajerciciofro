@@ -1,27 +1,18 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import { Link } from 'react-router-dom'
 
-const Home = () => {
+function Home() {
   return (
-    <div className="container">
+    <section className="hero">
+      <h1 className="hero__title">El arte de la paciencia</h1>
+      <p className="hero__subtitle">
+        Descubre la serenidad a través del cuidado y diseño de árboles Bonsái.
+        Un espacio para reconectar con la naturaleza.
+      </p>
+      <Link to="/contact" className="hero__cta">
+        Reserva un taller
+      </Link>
+    </section>
+  )
+}
 
-      <Header />
-
-      <main className="hero">
-        <h2>El arte de la paciencia</h2>
-
-        <p>
-          Descubre la serenidad a través del cuidado y diseño de árboles Bonsái.
-          Un espacio para reconectar con la naturaleza.
-        </p>
-
-        <button>Reserva un Taller</button>
-      </main>
-
-      <Footer />
-
-    </div>
-  );
-};
-
-export default Home;
+export default Home

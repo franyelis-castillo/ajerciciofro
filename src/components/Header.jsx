@@ -1,19 +1,24 @@
-import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom'
 
-const Header = () => {
+function Header() {
   return (
-    <header className="header">
-      <h1>ZENITH BONSAI</h1>
-
-      <nav>
-        <ul>
-          <li><Link to="/">Filosofía</Link></li>
-          <li><Link to="/">Galería</Link></li>
-          <li><Link to="/">Reservas</Link></li>
-        </ul>
+    <header className="navbar">
+      <NavLink to="/" className="navbar__brand">
+        Zenith Bonsai
+      </NavLink>
+      <nav className="navbar__links">
+        <NavLink to="/philosophy" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'}>
+          Filosofía
+        </NavLink>
+        <NavLink to="/gallery" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'}>
+          Galería
+        </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'}>
+          Reservas
+        </NavLink>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
