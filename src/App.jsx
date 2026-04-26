@@ -1,3 +1,5 @@
+// Componente principal de la app - Franyelis
+
 import AppRouter from './routes/AppRouter'
 import Header from './components/Header'
 import Footer from './components/Footer'

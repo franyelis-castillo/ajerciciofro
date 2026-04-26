@@ -1,5 +1,5 @@
 function Gallery() {
-  const items = ['Arce Japonés', 'Pino Negro', 'Ficus Retusa', 'Olmo Chino', 'Enebro', 'Azalea']
+  const bonsais = ['Arce Japonés', 'Pino Negro', 'Ficus Retusa', 'Olmo Chino', 'Enebro', 'Azalea']
 
   return (
     <section className="page-section">
