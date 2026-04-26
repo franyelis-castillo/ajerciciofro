@@ -1,4 +1,5 @@
-/* ===== RESET ===== */
+/* Estilos para el proyecto Zenith Bonsai - Franyelis */
+
 *,
 *::before,
 *::after {
@@ -7,19 +8,17 @@
   padding: 0;
 }
 
-/* ===== VARIABLES ===== */
 :root {
   --color-bg: #f9f6f2;
-  --color-text: #2c2c2c;
-  --color-muted: #6b6b6b;
+  --color-text: #1a1a1a;
+  --color-muted: #757575;
   --color-accent: #3a5c3a;
-  --color-border: #d4c9b0;
-  --color-white: #ffffff;
+  --color-border: #ddd;
+  --color-white: #fff;
   --font-heading: 'Playfair Display', Georgia, serif;
-  --font-body: 'Lato', 'Helvetica Neue', sans-serif;
+  --font-body: 'Lato', sans-serif;
 }
 
-/* ===== BASE ===== */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -27,7 +26,6 @@ body {
   line-height: 1.7;
 }
 
-/* ===== LAYOUT ===== */
 .app-wrapper {
   display: flex;
   flex-direction: column;
@@ -38,16 +36,15 @@ body {
   flex: 1;
   max-width: 900px;
   margin: 0 auto;
-  padding: 6rem 1.5rem;
+  padding: 5rem 1.5rem;
   width: 100%;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3rem;
+  padding: 1.2rem 2.5rem;
   border-bottom: 1px solid var(--color-border);
   background-color: var(--color-white);
   position: sticky;
@@ -59,34 +56,33 @@ body {
   font-family: var(--font-heading);
   font-size: 1.4rem;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
 .navbar__links {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .navbar__link {
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .navbar__link:hover,
 .navbar__link--active {
-  color: #000000;
+  color: #000;
   text-decoration: underline;
 }
 
-/* ===== HERO ===== */
 .hero {
   text-align: left;
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .hero__title {
@@ -98,28 +94,27 @@ body {
 .hero__subtitle {
   color: var(--color-muted);
   max-width: 560px;
-  margin: 0 0 3rem 0;
+  margin: 0 0 2.5rem 0;
 }
 
 .hero__cta {
   display: inline-block;
-  padding: 0.85rem 2.25rem;
-  background-color: #000000;
+  padding: 0.8rem 2rem;
+  background-color: #000;
   color: var(--color-white);
   font-size: 0.875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   transition: background-color 0.2s, color 0.2s;
 }
 
 .hero__cta:hover {
   background-color: transparent;
-  color: #000000;
+  color: #000;
 }
 
-/* ===== PAGE SECTION ===== */
 .page-section {
   padding: 3rem 0;
 }
@@ -135,6 +130,9 @@ body {
   color: var(--color-muted);
   margin-bottom: 3rem;
   max-width: 620px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-section__body p {
@@ -143,12 +141,10 @@ body {
   max-width: 680px;
 }
 
-/* ===== GALLERY ===== */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  justify-items: center;
 }
 
 .gallery-grid-bottom {
@@ -159,15 +155,15 @@ body {
 }
 
 .gallery-grid-bottom .gallery-card {
-  width: calc(22% - 0.75rem);
+  width: calc(25% - 0.75rem);
 }
 
 .gallery-card {
   border: 1px solid var(--color-border);
   overflow: hidden;
   transition: transform 0.2s;
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,23 +174,12 @@ body {
   transform: translateY(-4px);
 }
 
-/*.gallery-card__img-placeholder {
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, #c8d8c8, #8aaa8a);
-  display: block;
-}
-*/
-
 .gallery-card__name {
-  padding: 0.75rem;
   font-size: 0.875rem;
   color: var(--color-muted);
   text-align: center;
-  background-color: var(--color-white);
 }
 
-/* ===== BOOKING FORM ===== */
 .booking-form {
   max-width: 600px;
   display: flex;
@@ -247,15 +232,14 @@ body {
   color: var(--color-muted);
 }
 
-/* ===== BUTTON ===== */
 .btn {
-  padding: 0.85rem 2.25rem;
-  background-color: #000000;
+  padding: 0.8rem 2rem;
+  background-color: #000;
   color: var(--color-white);
-  border: 1px solid #000000;
+  border: 1px solid #000;
   font-family: var(--font-body);
   font-size: 0.875rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
@@ -263,13 +247,12 @@ body {
 
 .btn:hover {
   background-color: transparent;
-  color: #000000;
+  color: #000;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   border-top: 1px solid var(--color-border);
-  padding: 1.5rem 3rem;
+  padding: 1.2rem 2.5rem;
   text-align: center;
   font-size: 0.875rem;
   color: var(--color-muted);
