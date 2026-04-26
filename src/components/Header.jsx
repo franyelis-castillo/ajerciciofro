@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="navbar">
       <NavLink to="/" className="navbar__brand">
-        Zenith Bonsai
+        ZENITH BONSAI
       </NavLink>
       <nav className="navbar__links">
         <NavLink to="/philosophy" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'}>
